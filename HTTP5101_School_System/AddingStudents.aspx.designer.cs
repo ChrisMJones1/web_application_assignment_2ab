@@ -24,6 +24,15 @@ namespace HTTP5101_School_System
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl adding_students;
 
         /// <summary>
+        /// sql_debugger control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl sql_debugger;
+
+        /// <summary>
         /// adding_studentfname control.
         /// </summary>
         /// <remarks>
@@ -58,5 +67,23 @@ namespace HTTP5101_School_System
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox adding_studentenrolmentdate;
+
+        /// <summary>
+        /// Adding_Summary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Adding_Summary;
+
+        /// <summary>
+        /// students_result control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl students_result;
     }
 }
