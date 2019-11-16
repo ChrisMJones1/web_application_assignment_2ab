@@ -13,6 +13,12 @@
         //order by fname lname asc desc
         %>
     </div>
+    <div>
+        <a href="AddingStudents.aspx">Add a student</a>
+        <%
+            //creating a link that lead to the adding page of new students into the database
+        %>
+    </div>
     <div id="students_result" class="_table" runat="server">
         <div class="listitem">
             <div class="col6">STUDENT ID</div>

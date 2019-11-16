@@ -20,7 +20,12 @@ footer{margin-top:50px;}
 */
 .col4, .col4last{float:left; width:21.73%; margin-right:4.34%;}
 .col4last{margin-right:0%;}
-col6 {
+
+CSS
+/*
+Each column should be 14.49% wide with a gutter space of 2.6%
+*/
+.col6 {
     width: 14.49%;
     float: left;
     margin-right: 2.6%;
