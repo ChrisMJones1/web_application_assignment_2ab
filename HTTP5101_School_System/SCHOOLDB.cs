@@ -21,10 +21,10 @@ namespace HTTP5101_School_System
         //boot up MAMP, open start page
         //info is right below the PHPmyAdmin link
         //THIS INFO IS FOR A PUBLIC DATABASE THAT I CREATED, IT HAS READ-ONLY ACCESS
-        private static string User { get { return "humber_student"; } }
-        private static string Password { get { return "humberisgreat123"; } }
-        private static string Database { get { return "humber_school"; } }
-        private static string Server { get { return "107.180.41.170"; } }
+        private static string User { get { return "root"; } }
+        private static string Password { get { return "root"; } }
+        private static string Database { get { return "school"; } }
+        private static string Server { get { return "localhost"; } }
         private static string Port { get { return "3306"; } }
 
         //ConnectionString is something that we use to connect to a database
@@ -164,6 +164,63 @@ namespace HTTP5101_School_System
             Debug.WriteLine("Database Connection Terminated.");
 
             return student;
+        }
+        //FindTeacher is a modification of FindStudent, developed by Christine Bittle, accessed from Github on Nov. 15 2019, used for educational purposes only
+        public Dictionary<String, String> FindTeacher(int id)
+        {
+            //Utilize the connection string
+            MySqlConnection Connect = new MySqlConnection(ConnectionString);
+            //create a "blank" student so that our method can return something if we're not successful catching student data
+            Dictionary<String, String> teacher = new Dictionary<String, String>();
+
+            //we will try to grab student data from the database, if we fail, a message will appear in Debug>Windows>Output dialogue
+            try
+            {
+                //Build a custom query with the id information provided
+                string query = "select * from TEACHERS where teacherid = " + id;
+                Debug.WriteLine("Connection Initialized...");
+                //open the db connection
+                Connect.Open();
+                //Run out query against the database
+                MySqlCommand cmd = new MySqlCommand(query, Connect);
+                //grab the result set
+                MySqlDataReader resultset = cmd.ExecuteReader();
+
+                //Create a list of students (although we're only trying to get 1)
+                List<Dictionary<String, String>> Teachers = new List<Dictionary<String, String>>();
+
+                //read through the result set
+                while (resultset.Read())
+                {
+                    //information that will store a single student
+                    Dictionary<String, String> Teacher = new Dictionary<String, String>();
+
+                    //Look at each column in the result set row, add both the column name and the column value to our Student dictionary
+                    for (int i = 0; i < resultset.FieldCount; i++)
+                    {
+                        Debug.WriteLine("Attempting to transfer data of " + resultset.GetName(i));
+                        Debug.WriteLine("Attempting to transfer data of " + resultset.GetString(i));
+                        Teacher.Add(resultset.GetName(i), resultset.GetString(i));
+
+                    }
+                    //Add the student to the list of teachers
+                    Teachers.Add(Teacher);
+                }
+
+                teacher = Teachers[0]; //get the first teacher
+
+            }
+            catch (Exception ex)
+            {
+                //If something (anything) goes wrong with the try{} block, this block will execute
+                Debug.WriteLine("Something went wrong in the find Teacher method!");
+                Debug.WriteLine(ex.ToString());
+            }
+
+            Connect.Close();
+            Debug.WriteLine("Database Connection Terminated.");
+
+            return teacher;
         }
 
 
