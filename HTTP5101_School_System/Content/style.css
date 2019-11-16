@@ -20,4 +20,15 @@ footer{margin-top:50px;}
 */
 .col4, .col4last{float:left; width:21.73%; margin-right:4.34%;}
 .col4last{margin-right:0%;}
+col6 {
+    width: 14.49%;
+    float: left;
+    margin-right: 2.6%;
+}
+
+.col6last {
+    width: 14.49%;
+    float: left;
+    margin-right: 0;
+}
 

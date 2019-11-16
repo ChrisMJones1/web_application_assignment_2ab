@@ -51,18 +51,21 @@ namespace HTTP5101_School_System
                 students_result.InnerHtml += "<div class=\"listitem\">";
 
                 string studentid = row["STUDENTID"];
+                students_result.InnerHtml += "<div class=\"col6\">" + studentid + "</div>";
 
                 string studentfirstname = row["STUDENTFNAME"];
-                students_result.InnerHtml += "<div class=\"col4\"><a href=\"ShowStudent.aspx?studentid="+studentid+"\">" + studentfirstname + "</a></div>";
+                students_result.InnerHtml += "<div class=\"col6\"><a href=\"ShowStudent.aspx?studentid="+studentid+"\">" + studentfirstname + "</a></div>";
 
                 string studentlastname = row["STUDENTLNAME"];
-                students_result.InnerHtml += "<div class=\"col4\">" + studentlastname + "</div>";
+                students_result.InnerHtml += "<div class=\"col6\">" + studentlastname + "</div>";
 
                 string studentnumber = row["STUDENTNUMBER"];
-                students_result.InnerHtml += "<div class=\"col4\">" + studentnumber + "</div>";
+                students_result.InnerHtml += "<div class=\"col6\">" + studentnumber + "</div>";
 
                 string enrolmentdate = row["ENROLMENTDATE"];
-                students_result.InnerHtml += "<div class=\"col4last\">" + enrolmentdate + "</div>";
+                students_result.InnerHtml += "<div class=\"col6\">" + enrolmentdate + "</div>";
+
+                students_result.InnerHtml += "<div class=\"col6last\">" + "<a href =\"#\">" + "Update" + "</a>" + " " + " " + " " + "<a href =\"#\">" + "Delete" + "</a>" + " " + " " + " " + "<a href=\"ShowStudent.aspx?studentid=" + studentid + "\">" + "View" + "</a></div>";
 
                 students_result.InnerHtml += "</div>";
             }
