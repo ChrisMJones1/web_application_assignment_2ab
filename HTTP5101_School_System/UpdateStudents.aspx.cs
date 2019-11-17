@@ -29,7 +29,12 @@ namespace HTTP5101_School_System
                     student_lname.InnerHtml = student_record["STUDENTLNAME"];
                     student_number.InnerHtml = student_record["STUDENTNUMBER"];
                     enrolment_date.InnerHtml = student_record["ENROLMENTDATE"];
-                    if (Page.IsPostBack)
+                }
+                else
+                {
+                    valid = false;
+                }
+                if (Page.IsPostBack)
                     {
                         Page.Validate();
                         if (Page.IsValid)
@@ -40,11 +45,9 @@ namespace HTTP5101_School_System
                             string Update_Studentnumber = update_studentnumber.Text.ToString();
                             string Update_Studentenrolmentdate = update_studentenrolmentdate.Text.ToString();
 
-                            updating_summary.InnerHtml = "You have change the following information about " + student_fullname.InnerHtml + ":<br>";
-
-
-                            
-                            
+                            updating_summary.InnerHtml = "You have changed the following information about " + student_fullname.InnerHtml + ":<br>";                            
+                            //if user doesn't want to change a field it will be display as unchange
+                            //if a field is change the information will be display accordingly
                             if (Update_Studentfname != "")
                             {
                                 updating_summary.InnerHtml += "First name: " + Update_Studentfname + "<br>";
@@ -82,16 +85,7 @@ namespace HTTP5101_School_System
                     }
 
 
-                }
-                else
-                {
-                    valid = false;
-                }
-
-                if (!valid)
-                {
-                    updating_students.InnerHtml = "There was an error finding that student.";
-                }
+               
 
 
 

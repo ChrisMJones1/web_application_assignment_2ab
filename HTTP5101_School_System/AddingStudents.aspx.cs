@@ -22,9 +22,10 @@ namespace HTTP5101_School_System
                     string Adding_StudentEnrolmentDate = adding_studentenrolmentdate.Text.ToString();
 
                     Adding_Summary.InnerHtml = "You have added the following student in the system: <br>";
-                    Adding_Summary.InnerHtml += "Student Name: " + Adding_StudentFname + " " + Adding_StudentLname + "<br>";
+                    Adding_Summary.InnerHtml += "First Name: " + Adding_StudentFname + "<br>";
+                    Adding_Summary.InnerHtml += "Last Name: " + Adding_StudentLname + "<br>";
                     Adding_Summary.InnerHtml += "Student Number: " + Adding_StudentNumber + "<br>";
-                    Adding_Summary.InnerHtml += "Student EnrolmentDate: " + Adding_StudentEnrolmentDate + "<br>";
+                    Adding_Summary.InnerHtml += "Student Enrolment Date: " + Adding_StudentEnrolmentDate + "<br>";
                     
                     string query = "insert into students (STUDENTFNAME, STUDENTLNAME, STUDENTNUMBER, ENROLMENTDATE) values (";
 
@@ -36,7 +37,7 @@ namespace HTTP5101_School_System
 
 
 
-                    sql_debugger.InnerHtml = query;
+                    //sql_debugger.InnerHtml = query;
 
                     var db = new SCHOOLDB();
                     List<Dictionary<String, String>> rs = db.List_Query(query);

@@ -24,39 +24,57 @@ namespace HTTP5101_School_System
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl deleting_students;
 
         /// <summary>
-        /// delete_studentfname control.
+        /// student_fullname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox delete_studentfname;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl student_fullname;
 
         /// <summary>
-        /// delete_studentlname control.
+        /// student_fname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox delete_studentlname;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl student_fname;
 
         /// <summary>
-        /// delete_studentnumber control.
+        /// student_lname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox delete_studentnumber;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl student_lname;
 
         /// <summary>
-        /// delete_studentenrolmentdate control.
+        /// student_number control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox delete_studentenrolmentdate;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl student_number;
+
+        /// <summary>
+        /// enrolment_date control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl enrolment_date;
+
+        /// <summary>
+        /// deleting_summary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl deleting_summary;
     }
 }
