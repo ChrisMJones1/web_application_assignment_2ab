@@ -223,6 +223,67 @@ namespace HTTP5101_School_System
             return teacher;
         }
 
+        //FindClass is a modification of FindStudent, developed by Christine Bittle, accessed from Github on Nov. 15 2019,
+        //for educational purposes.
+        //FindClass will return a dictionary of results from the database for classes, and uses joins and group by syntax
+        //to display all relevant information for that class, including the teacher's name and the name's of all the students
+        //in that class.
+        public Dictionary<String, String> FindClass(int id)
+        {
+            //Utilize the connection string
+            MySqlConnection Connect = new MySqlConnection(ConnectionString);
+            //create a "blank" schoolclass (as class is a reserved word), so that our method can return something if we're not successful catching student data
+            Dictionary<String, String> schoolclass = new Dictionary<String, String>();
+
+            //we will try to grab student data from the database, if we fail, a message will appear in Debug>Windows>Output dialogue
+            try
+            {
+                //Build a custom query with the id information provided, joining the tables to acquire the info on the students and teacher for the class as well.
+                string query = "select * from CLASSES where classid = " + id;
+                Debug.WriteLine("Connection Initialized...");
+                //open the db connection
+                Connect.Open();
+                //Run out query against the database
+                MySqlCommand cmd = new MySqlCommand(query, Connect);
+                //grab the result set
+                MySqlDataReader resultset = cmd.ExecuteReader();
+
+                //Create a list of students (although we're only trying to get 1)
+                List<Dictionary<String, String>> Schoolclasses = new List<Dictionary<String, String>>();
+
+                //read through the result set
+                while (resultset.Read())
+                {
+                    //information that will store a single class
+                    Dictionary<String, String> Schoolclass = new Dictionary<String, String>();
+
+                    //Look at each column in the result set row, add both the column name and the column value to our Student dictionary
+                    for (int i = 0; i < resultset.FieldCount; i++)
+                    {
+                        Debug.WriteLine("Attempting to transfer data of " + resultset.GetName(i));
+                        Debug.WriteLine("Attempting to transfer data of " + resultset.GetString(i));
+                        Schoolclass.Add(resultset.GetName(i), resultset.GetString(i));
+
+                    }
+                    //Add the student to the list of teachers
+                    Schoolclasses.Add(Schoolclass);
+                }
+
+                schoolclass = Schoolclasses[0]; //get the first class
+
+            }
+            catch (Exception ex)
+            {
+                //If something (anything) goes wrong with the try{} block, this block will execute
+                Debug.WriteLine("Something went wrong in the find Teacher method!");
+                Debug.WriteLine(ex.ToString());
+            }
+
+            Connect.Close();
+            Debug.WriteLine("Database Connection Terminated.");
+
+            return schoolclass;
+        }
 
 
     }

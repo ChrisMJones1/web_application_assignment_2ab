@@ -122,6 +122,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddClass.aspx" />
     <Content Include="AddingStudents.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -129,6 +130,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
+    <Content Include="DeleteClass.aspx" />
     <Content Include="DeletingStudents.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -141,6 +143,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="ListClasses.aspx" />
+    <Content Include="ShowClass.aspx" />
+    <Content Include="UpdateClass.aspx" />
     <Content Include="updatestudents_javascript.js" />
     <Content Include="Layout.Master" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -181,6 +186,13 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddClass.aspx.cs">
+      <DependentUpon>AddClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddClass.aspx.designer.cs">
+      <DependentUpon>AddClass.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddingStudents.aspx.cs">
       <DependentUpon>AddingStudents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -190,6 +202,13 @@
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="DeleteClass.aspx.cs">
+      <DependentUpon>DeleteClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteClass.aspx.designer.cs">
+      <DependentUpon>DeleteClass.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DeletingStudents.aspx.cs">
       <DependentUpon>DeletingStudents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -207,6 +226,13 @@
     <Compile Include="Layout.Master.designer.cs">
       <DependentUpon>Layout.Master</DependentUpon>
     </Compile>
+    <Compile Include="ListClasses.aspx.cs">
+      <DependentUpon>ListClasses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListClasses.aspx.designer.cs">
+      <DependentUpon>ListClasses.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ListStudents.aspx.cs">
       <DependentUpon>ListStudents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -223,6 +249,13 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SCHOOLDB.cs" />
+    <Compile Include="ShowClass.aspx.cs">
+      <DependentUpon>ShowClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowClass.aspx.designer.cs">
+      <DependentUpon>ShowClass.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ShowStudent.aspx.cs">
       <DependentUpon>ShowStudent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -236,6 +269,13 @@
     </Compile>
     <Compile Include="ShowTeacher.aspx.designer.cs">
       <DependentUpon>ShowTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateClass.aspx.cs">
+      <DependentUpon>UpdateClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateClass.aspx.designer.cs">
+      <DependentUpon>UpdateClass.aspx</DependentUpon>
     </Compile>
     <Compile Include="UpdateStudents.aspx.cs">
       <DependentUpon>UpdateStudents.aspx</DependentUpon>
