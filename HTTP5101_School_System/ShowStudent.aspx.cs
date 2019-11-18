@@ -11,8 +11,10 @@ namespace HTTP5101_School_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //This code is provided by Christine Bittle, modified by Paul Tran
             bool valid = true;
             string studentid = Request.QueryString["studentid"];
+            string classid = Request.QueryString["classid"];
             if (String.IsNullOrEmpty(studentid)) valid = false;
 
             //We will attempt to get the record we need
@@ -28,13 +30,18 @@ namespace HTTP5101_School_System
                     student_lname.InnerHtml = student_record["STUDENTLNAME"];
                     student_number.InnerHtml = student_record["STUDENTNUMBER"];
                     enrolment_date.InnerHtml = student_record["ENROLMENTDATE"];
+                    //what if ppl want to see which class the student enrolled  in
+                    //enrolled_class.InnerHtml = "";
+                    //string query = "SELECT classes.classname, classes.classcode from classes inner join studentsxclasses on classes.classid = studentsxclasses.classid inner join students on studentsxclasses.studentid = students.studentid where students.studentid = " + studentid;
+
                 }
+               
+              
                 else
                 {
                     valid = false;
                 }
-            }
-
+            }        
             if (!valid)
             {
                 student.InnerHtml = "There was an error finding that student.";

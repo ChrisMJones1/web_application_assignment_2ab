@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HTTP5101_School_System {
-    
-    
-    public partial class ShowStudent {
-        
+namespace HTTP5101_School_System
+{
+
+
+    public partial class ShowStudent
+    {
+
         /// <summary>
         /// student control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace HTTP5101_School_System {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl student;
-        
+
         /// <summary>
         /// student_title_fname control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace HTTP5101_School_System {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl student_title_fname;
-        
+
         /// <summary>
         /// student_fname control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace HTTP5101_School_System {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl student_fname;
-        
+
         /// <summary>
         /// student_lname control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace HTTP5101_School_System {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl student_lname;
-        
+
         /// <summary>
         /// student_number control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace HTTP5101_School_System {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl student_number;
-        
+
         /// <summary>
         /// enrolment_date control.
         /// </summary>
@@ -65,5 +67,14 @@ namespace HTTP5101_School_System {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl enrolment_date;
+
+        /// <summary>
+        /// enrolled_class control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl enrolled_class;
     }
 }
