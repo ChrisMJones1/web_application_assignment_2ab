@@ -14,6 +14,13 @@
         Last Name: <span id="student_lname" runat="server"></span><br />
         Student Number: <span id="student_number" runat="server"></span><br />
         Enrolment Date: <span id="enrolment_date" runat="server"></span><br />
-        <!-- Enrolled class :<span id="enrolled_class" runat="server"></span><br /> -->
+        <!-- <div id="enrolled_classes" runat="server"> -->
+            <div><asp:Button runat="server" Text="Show Enrolled Classes" /></div>
+            <div class="_table" runat="server">
+                <div id="classes_header" runat="server"></div>
+                <div id="classes_result" runat="server"></div>
+            </div>        
+        <!-- </div> -->
     </div>
+   
 </asp:Content>

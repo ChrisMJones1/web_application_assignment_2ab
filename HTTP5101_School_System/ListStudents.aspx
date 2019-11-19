@@ -29,7 +29,7 @@
             <div class="col6last">MODIFY</div>     
         </div>            
     </div> 
-    <!-- What if the user scroll through all the page and still can't find the student -->
+    <!-- WHAT IF the user scroll through all the page and still can't find the student and want to add the student in the system -->
     <!-- The Add a student link at the end will be helpful in that case -->
     <a href="AddingStudents.aspx">Add a student</a>
 </asp:Content>
