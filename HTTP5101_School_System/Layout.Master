@@ -10,7 +10,12 @@
 <body>
     <header>
         <div class="cwidth">
-            Hello Everyone!
+            <div id="school-logo">
+               <a href="#"><img src="image/school-logo-01.png" alt="The Xavier school logo and slogan"/></a>
+            </div>
+            <div>
+                 <a href="#"><img src="image/school-name.png" alt="The Xavier school name"/></a>
+            </div>
         </div>
     </header>
     <div class="cwidth">

@@ -41,6 +41,7 @@ namespace HTTP5101_School_System
                 query += " WHERE STUDENTFNAME like '%"+searchkey+"%' ";
                 query += " or STUDENTLNAME like '%"+searchkey+"%' ";
                 query += " or STUDENTNUMBER like '%"+searchkey+"%' ";
+                //query += " WHERE STUDENTNUMBER like '%" + searchkey + "%' ";
             }
             sql_debugger.InnerHtml = query;
 
@@ -48,6 +49,7 @@ namespace HTTP5101_School_System
             List<Dictionary<String,String>> rs = db.List_Query(query);
             foreach(Dictionary<String,String> row in rs)
             {
+                                
                 students_result.InnerHtml += "<div class=\"listitem\">";
 
                 string studentid = row["STUDENTID"];
@@ -68,6 +70,10 @@ namespace HTTP5101_School_System
                 students_result.InnerHtml += "<div class=\"col6last\">" + "<a href =\"UpdateStudents.aspx?studentid="+studentid+"\">" + "Update" + "</a>" + " " + " " + " " + "<a href =\"DeletingStudents.aspx?studentid=" + studentid + "\">" + "Delete" + "</a>" + " " + " " + " " + "<a href=\"ShowStudent.aspx?studentid=" + studentid + "\">" + "View" + "</a></div>";
 
                 students_result.InnerHtml += "</div>";
+            }
+            if (students_result.InnerHtml == "")
+            {
+                students_result.InnerHtml += "There is no student matches the search criteria";
             }
             
 

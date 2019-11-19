@@ -37,11 +37,13 @@ namespace HTTP5101_School_System
                     //string query = "SELECT classes.classname, classes.classcode from classes inner join studentsxclasses on classes.classid = studentsxclasses.classid inner join students on studentsxclasses.studentid = students.studentid where students.studentid = " + studentid;
                     if (Page.IsPostBack)
                     {
+                        classes_header.InnerHtml = "<div class=\"listitem\"><div class=\"col4\">Class code</div><div class=\"col4\">Class name</div><div class=\"col4\">Start date</div><div class=\"col4last\">Finish date</div></div>";
                         string query = "SELECT classes.* from classes inner join studentsxclasses on classes.classid = studentsxclasses.classid inner join students on studentsxclasses.studentid = students.studentid where students.studentid =" + studentid;
                         List<Dictionary<String, String>> rs = db.List_Query(query);
                         foreach (Dictionary<String, String> row in rs)
                         {
-                            classes_result.InnerHtml += "<div class=\"_table\">";
+                            
+                            classes_result.InnerHtml += "<div class=\"listitem\">";
 
                             string classid = row["CLASSID"];              
 
@@ -56,6 +58,7 @@ namespace HTTP5101_School_System
 
                             string finishdate = row["FINISHDATE"];
                             classes_result.InnerHtml += "<div class=\"col4last\">" + finishdate + "</div>";
+                            classes_result.InnerHtml += "</div>";
                             //To test this, I add myself in the database and enrolled me in a class and the code actually show I am a student                         
 
                         }
