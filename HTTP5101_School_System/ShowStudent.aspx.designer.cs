@@ -69,12 +69,30 @@ namespace HTTP5101_School_System
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl enrolment_date;
 
         /// <summary>
-        /// enrolled_class control.
+        /// enrolled_classes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl enrolled_class;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl enrolled_classes;
+
+        /// <summary>
+        /// classes_header control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl classes_header;
+
+        /// <summary>
+        /// classes_result control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl classes_result;
     }
 }
