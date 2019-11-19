@@ -148,6 +148,7 @@
     <Content Include="UpdateClass.aspx" />
     <Content Include="updatestudents_javascript.js" />
     <Content Include="Layout.Master" />
+    <Content Include="UpdateTeacher.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="ListStudents.aspx" />
     <Content Include="ListTeachers.aspx" />
@@ -283,6 +284,13 @@
     </Compile>
     <Compile Include="UpdateStudents.aspx.designer.cs">
       <DependentUpon>UpdateStudents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTeacher.aspx.cs">
+      <DependentUpon>UpdateTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateTeacher.aspx.designer.cs">
+      <DependentUpon>UpdateTeacher.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
