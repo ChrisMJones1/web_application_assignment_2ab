@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UpdateTeacher.aspx.cs" Inherits="HTTP5101_School_System.UpdateTeacher" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="UpdateTeacher.aspx.cs" Inherits="HTTP5101_School_System.UpdateTeacher" %>
 <asp:Content ID="teachers_list" ContentPlaceHolderID="body" runat="server">
      <script type="text/javascript" src="updatestudents_javascript.js" ></script>
     <!-- <style>#firstname_change{display: none;}</style> -->
