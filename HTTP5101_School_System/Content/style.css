@@ -1,18 +1,102 @@
 ﻿
 /*GENERAL CSS*/
+body {
+    background: url(background.png);
+}
 .cwidth{max-width:1080px; margin:0 auto;}
-header, footer {background:#195372;}
+header, footer {
+    background: #BDCCD4;
+}
 header{margin-bottom:50px;}
 footer{margin-top:50px;}
+/*Main menu*/
+.main-navigation ul /*#footer ul*/ {
+    margin: 0;
+    padding: 1em 0;
+    font-size: 0.81em;
+    font-family: Lato, sans-serif;
+}
+
+.main-navigation li /*#footer-nav li*/ {
+    display: inline-block;
+    vertical-align: top;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.hidden {
+    position: absolute;
+    left: -100000px;
+    width: 1px;
+    height: 1px;
+}
+/*Flex box*/
+#header-flex-box {
+    display: flex;
+    flex-flow: row wrap;
+}
+#school-logo, #school-name, #main-menu {
+    flex: 1 0 0;
+}
+#school-name {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+
+a:link,
+a:visited {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover,
+a active {
+    color: #9F224E;
+}
+._table a:link, ._table a:visited {
+    color:cornflowerblue;
+    font-weight:bold;
+}
+._table a:hover,
+._table a:active {
+    color: #9F224E;
+}
+.button-link {
+    padding: 5px 10px;
+    background:grey;
+    box-shadow: 1px 2px;
+}
+#top-adding-link {
+    float:right;
+}
+
+
 
 
 /*CSS FOR TABLE-LIKE STYLING*/
 #students_result {width:100%;}
-.listitem {background:#fefefe; padding: 12px 5%; width:90%; overflow:hidden;}
-
+.listitem {background:#fefefe; padding: 12px 5%; margin: 10px; width:90%; overflow:hidden;}
 .listitem:after{clear:both;}
 .listitem:nth-child(2n){background:#dedede;}
 .listitem:hover {background: #e9d898;}
+
+._table a:link, ._table a:visited {
+    color: mediumblue;
+    font-weight: bold;
+}
+
+._table a:hover,
+._table a:active {
+    color: #9F224E;
+}
+.listitem:first-child {
+    font-weight:bold;
+}
+.table-content {
+    font-weight:normal;
+}
 /*
     sandbox.bittsdevelopment.com/colcalc
     columns : 4

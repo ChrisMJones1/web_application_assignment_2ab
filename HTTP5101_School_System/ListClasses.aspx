@@ -3,11 +3,11 @@
     <h1>Classes</h1>
     <div id="class_nav">
         <asp:label for="class_search" runat="server">Search:</asp:label>
-        <asp:TextBox ID="class_search" runat="server" placeholder="Search"></asp:TextBox>
+        <asp:TextBox ID="class_search" runat="server" placeholder="Search for a class here"></asp:TextBox>
         <asp:Button runat="server" text="Search"/>
     </div>
-    <div id="adding_class">
-        <a href="AddClass.aspx">Add a Class</a>
+    <div>
+        <a href="AddClass.aspx" id="top-adding-link" class="button-link">Add a Class</a>
     </div>
     <div class="_table" runat="server">
         <div class="listitem">
@@ -21,5 +21,8 @@
         <div id="classes_result" runat="server">
 
         </div>
+    </div>
+      <div>
+        <a href="AddClass.aspx" id="bottom-adding-link" class="button-link">Add a Class</a>
     </div>
 </asp:Content>

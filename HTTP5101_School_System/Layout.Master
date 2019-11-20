@@ -5,17 +5,29 @@
 <html>
 <head runat="server">
     <title>School System</title>
-    <link rel="stylesheet" type="text/css" href="/Content/style.css" />
+    <link rel="stylesheet" type="text/css" href="Content/style.css" />
 </head>
 <body>
     <header>
         <div class="cwidth">
-            <div id="school-logo">
-               <a href="#"><img src="image/school-logo-01.png" alt="The Xavier school logo and slogan"/></a>
-            </div>
-            <div>
-                 <a href="#"><img src="image/school-name.png" alt="The Xavier school name"/></a>
-            </div>
+            <div id="header-flex-box">
+                <div id="school-logo">
+                    <a href="#"><img src="image/school-logo-01.png" alt="The Xavier school logo and slogan"/></a>
+                </div>
+                <div id="school-name">
+                     <img src="image/school-name.png" alt="The Xavier school name"/>
+                </div>
+                <div class="main-menu">
+					    <nav class="main-navigation">
+						    <h2 class="hidden">Main navigation</h2>
+						    <ul class="menu" id="top-nav">
+                                <li><a href="ListStudents.aspx" class="button-link">STUDENTS</a></li>
+							    <li><a href="ListTeachers.aspx" class="button-link">TEACHERS</a></li>
+							    <li><a href="ListClasses.aspx"class="button-link">CLASSES</a></li>					
+						    </ul>
+					    </nav>
+				 </div>
+            </div>            
         </div>
     </header>
     <div class="cwidth">
@@ -26,7 +38,16 @@
     </div>
     <footer>
         <div class="cwidth">
-             My Ultra Awesome Footer Here
+             <div class="main-menu">
+					    <nav class="main-navigation">
+						    <h2 class="hidden">Main navigation</h2>
+						    <ul class="menu" id="footer-nav">
+                                <li><a href="ListStudents.aspx" class="button-link">STUDENTS</a></li>
+							    <li><a href="ListTeachers.aspx" class="button-link">TEACHERS</a></li>
+							    <li><a href="ListClasses.aspx"class="button-link">CLASSES</a></li>					
+						    </ul>
+					    </nav>
+				 </div>
         </div>
     </footer>
 </body>
