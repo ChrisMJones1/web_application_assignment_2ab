@@ -4,24 +4,24 @@
         <h1>Class details for <span id="classcode_title" runat="server"></span></h1>
 
         <div id="class_info">
-            <div>
+            <div class="content-box">
                 <h2>Class code:</h2>
                 <div id="classcode_display" runat="server"></div>
 
             </div>
-            <div>
+            <div class="content-box">
                 <h2>Teacher ID:</h2>
                 <div id="teacherid" runat="server"></div>
             </div>
-            <div>
+            <div class="content-box">
                 <h2>Start date:</h2>
                 <div id="startdate" runat="server"></div>
             </div>
-            <div>
+            <div class="content-box">
                 <h2>Finish date:</h2>
                 <div id="finishdate" runat="server"></div>
             </div>
-            <div>
+            <div class="content-box">
                 <h2>Class name</h2>
                 <div id="classname" runat="server"></div>
             </div>
