@@ -36,5 +36,6 @@
         <section>
             <asp:Button runat="server" Text="Submit" />
         </section>
+        <div id="edit_confirmation" runat="server"></div>
     </div>
 </asp:Content>

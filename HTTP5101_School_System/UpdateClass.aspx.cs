@@ -27,9 +27,42 @@ namespace HTTP5101_School_System
                     classcode_title.InnerHtml = class_record["CLASSCODE"];
                     classcode_display.InnerHtml = class_record["CLASSCODE"];
                     teacherid.InnerHtml = class_record["TEACHERID"];
-                    startdate.InnerHtml = class_record["STARTDATE"];
-                    finishdate.InnerHtml = class_record["FINISHDATE"];
+                    startdate.InnerHtml = class_record["STARTDATE"].Substring(0, 10);
+                    finishdate.InnerHtml = class_record["FINISHDATE"].Substring(0, 10);
                     classname.InnerHtml = class_record["CLASSNAME"];
+                    if (Page.IsPostBack)
+                    {
+                        string ClassCode = new_classcode.Text.ToString();
+                        string TeacherId = new_teacherid.Text.ToString();
+                        string StartDate = new_startdate.Text.ToString();
+                        string FinishDate = new_finishdate.Text.ToString();
+                        string ClassName = new_classname.Text.ToString();
+                        //should probably do the handling with a function or a loop (nesting the data within a list and incremeting to check for blank input)
+                        if (ClassCode == "")
+                        {
+                            ClassCode =  class_record["CLASSCODE"];
+                        }
+                        if (TeacherId == "")
+                        {
+                            TeacherId = class_record["TEACHERID"];
+                        }
+                        if (StartDate == "")
+                        {
+                            StartDate = class_record["STARTDATE"].Substring(0, 10);
+                        }
+                        if (FinishDate == "")
+                        {
+                            FinishDate = class_record["FINISHDATE"].Substring(0, 10);
+                        }
+                        if (ClassName == "")
+                        {
+                            ClassName = class_record["CLASSNAME"];
+                        }
+                        string query = "UPDATE classes SET CLASSCODE ='" + ClassCode + "', TEACHERID =" + TeacherId + ", STARTDATE='" + StartDate + "', FINISHDATE='" + FinishDate + "', CLASSNAME='" + ClassName + "' WHERE CLASSID = " + classid;
+                        var edit = new SCHOOLDB();
+                        int add = edit.Modify_Query(query);
+                        Response.Redirect("~/ShowClass.aspx?classid=" + classid);
+                    }
 
                 }
                 else

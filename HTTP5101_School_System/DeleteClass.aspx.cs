@@ -33,9 +33,9 @@ namespace HTTP5101_School_System
                     if (Page.IsPostBack)
                     {
                         string query = "DELETE from `classes` where classid = " + classid;
-                        var deleteb = new SCHOOLDB();
-                        int delete = deleteb.Modify_Query(query);
-                        delete_confirmation.InnerHtml = "Class deleted";
+                        var deletedb = new SCHOOLDB();
+                        int delete = deletedb.Modify_Query(query);
+                        Response.Redirect("~/ListClasses.aspx");
                     }
                 }
                 else

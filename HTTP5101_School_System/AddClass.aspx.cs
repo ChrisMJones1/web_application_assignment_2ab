@@ -25,7 +25,7 @@ namespace HTTP5101_School_System
                     string query = "INSERT INTO classes (CLASSCODE, TEACHERID, STARTDATE, FINISHDATE, CLASSNAME) values ('" + ClassCode + "'," + TeacherId + ",'" + StartDate + "','" + FinishDate + "','" + ClassName + "');";
                     var db = new SCHOOLDB();
                     int add = db.Modify_Query(query);
-                    add_confirmation.InnerHtml = "Class added";
+                    Response.Redirect("~/ListClasses.aspx");
 
                 }
             }
