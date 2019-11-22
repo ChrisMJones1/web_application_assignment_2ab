@@ -31,4 +31,5 @@
     <div id="show_enrolled" runat="server">
         <asp:Button runat="server" Text="Delete" />
     </div>
+    <div id="delete_confirmation" runat="server"></div>
 </asp:Content>

@@ -104,6 +104,38 @@ namespace HTTP5101_School_System
             return ResultSet;
         }
 
+        //this method will append the class table with a new class
+        public int Modify_Query(string query)
+        {
+            MySqlConnection Connect = new MySqlConnection(ConnectionString);
+            List<Dictionary<String, String>> ResultSet = new List<Dictionary<String, String>>();
+
+            try
+            {
+                Debug.WriteLine("Connection Initialized...");
+                Debug.WriteLine("Attempting to execute query" + query);
+                //open the db connection
+                Connect.Open();
+                //give the connection a query
+                MySqlCommand cmd = new MySqlCommand(query, Connect);
+                //grab the result set
+                cmd.CommandText = query;
+                cmd.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Something went wrong in the List_Query method!");
+                Debug.WriteLine(ex.ToString());
+
+            }
+
+            Connect.Close();
+            Debug.WriteLine("Database Connection Terminated.");
+
+            return 1;
+        }
+
 
         //The objective of this method in the schooldb class is to find a particular student given an integer ID
         //We will return a dictionary because a student is defined as having keys and values

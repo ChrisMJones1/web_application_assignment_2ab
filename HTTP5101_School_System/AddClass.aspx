@@ -24,4 +24,5 @@
         </section>
     </div>
     <asp:Button runat="server" Text="Add" />
+    <div id="add_confirmation" runat="server"></div>
 </asp:Content>

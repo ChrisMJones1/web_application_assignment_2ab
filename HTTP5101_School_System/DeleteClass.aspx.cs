@@ -30,7 +30,13 @@ namespace HTTP5101_School_System
                     startdate.InnerHtml = class_record["STARTDATE"];
                     finishdate.InnerHtml = class_record["FINISHDATE"];
                     classname.InnerHtml = class_record["CLASSNAME"];
-
+                    if (Page.IsPostBack)
+                    {
+                        string query = "DELETE from `classes` where classid = " + classid;
+                        var deleteb = new SCHOOLDB();
+                        int delete = deleteb.Modify_Query(query);
+                        delete_confirmation.InnerHtml = "Class deleted";
+                    }
                 }
                 else
                 {
