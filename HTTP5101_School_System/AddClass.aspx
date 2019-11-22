@@ -23,5 +23,5 @@
             <asp:TextBox ID="classname" runat="server" placeholder="e.g. Introduction to Biology"></asp:TextBox>
         </section>
     </div>
-    <asp:Button runat="server" Text="Submit" />
+    <asp:Button runat="server" Text="Add" />
 </asp:Content>

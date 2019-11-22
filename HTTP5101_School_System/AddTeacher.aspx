@@ -27,7 +27,7 @@
         <div>
             <label for ="add_salary">Salary:</label>
             <asp:Textbox runat="server" ID="add_salary" placeholder="00.00"></asp:Textbox>
-            <asp:RequiredFieldValidator runat="server" ControlToValidate="add_salary" EnableClientScript="true" ErrorMessage="Please enter the salary"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator runat="server" ControlToValidate="add_salary" EnableClientScript="true" ErrorMessage="Please enter the salary"></asp:RequiredFieldValidator><br />
             <asp:Button runat="server" text="Add" />
         </div> 
         <div id="Add_Summary" runat="server" ShowSummary="true"></div>

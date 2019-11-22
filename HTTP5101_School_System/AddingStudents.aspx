@@ -5,27 +5,27 @@
         <div id="sql_debugger" runat="server"></div>
         <div>
             <label for="adding_studentfname">First name:</label> 
-            <asp:Textbox runat="server" ID="adding_studentfname" placeholder="John"></asp:Textbox><br />
+            <asp:Textbox runat="server" ID="adding_studentfname" placeholder="John"></asp:Textbox>
             <%/*What if the field is blank?*/ %>
             <asp:RequiredFieldValidator runat="server" ControlToValidate="adding_studentfname" EnableClientScript="true" ErrorMessage="Please enter the student first name"></asp:RequiredFieldValidator>
         </div>
         <div>
             <label for ="adding_studentlname">Last name:</label>      
-            <asp:Textbox runat="server" ID="adding_studentlname" placeholder="Smith"></asp:Textbox><br />
+            <asp:Textbox runat="server" ID="adding_studentlname" placeholder="Smith"></asp:Textbox>
             <asp:RequiredFieldValidator runat="server" ControlToValidate="adding_studentlname" EnableClientScript="true" ErrorMessage="Please enter the student last name"></asp:RequiredFieldValidator>
         </div>
         <div>
             <label for="adding_studentnumber">Student Number:</label>
-            <asp:Textbox runat="server" ID="adding_studentnumber" placeholder="N1234"></asp:Textbox><br />
-            <asp:RequiredFieldValidator runat="server" ControlToValidate="adding_studentnumber" EnableClientScript="true" ErrorMessage="Please enter the student number"></asp:RequiredFieldValidator><br />
+            <asp:Textbox runat="server" ID="adding_studentnumber" placeholder="N1234"></asp:Textbox>
+            <asp:RequiredFieldValidator runat="server" ControlToValidate="adding_studentnumber" EnableClientScript="true" ErrorMessage="Please enter the student number"></asp:RequiredFieldValidator>
             <%/*What if the user enter the wrong format of student number?*/ %>
-            <asp:RegularExpressionValidator runat="server" ControlToValidate="adding_studentnumber" EnableClientScript="true" ErrorMessage="Please enter the right format of student number" ValidationExpression="^N|n[0-9]{4}$"></asp:RegularExpressionValidator><br />
+            <asp:RegularExpressionValidator runat="server" ControlToValidate="adding_studentnumber" EnableClientScript="true" ErrorMessage="Please enter the right format of student number" ValidationExpression="^N|n[0-9]{4}$"></asp:RegularExpressionValidator>
         </div>
         <div>
             <label for ="adding_studentenrolmentdate">Enrolment Date:</label>
-            <asp:Textbox runat="server" ID="adding_studentenrolmentdate" placeholder="16 Nov 2019"></asp:Textbox><br />
+            <asp:Textbox runat="server" ID="adding_studentenrolmentdate" placeholder="16 Nov 2019"></asp:Textbox>
             <asp:RequiredFieldValidator runat="server" ControlToValidate="adding_studentenrolmentdate" EnableClientScript="true" ErrorMessage="Please enter the enrolmentdate"></asp:RequiredFieldValidator><br />
-            <asp:Button runat="server" text="Adding" />
+            <asp:Button runat="server" text="Add" />
             
         </div>      
         <div id="Adding_Summary" runat="server" ShowSummary="true"></div>
