@@ -39,7 +39,6 @@ namespace HTTP5101_School_System
                     Page.Validate();
                     if (Page.IsValid)
                     {
-
                         string Update_Teacherfname = update_teacherfname.Text.ToString();
                         string Update_Teacherlname = update_teacherlname.Text.ToString();
                         string Update_Employeenumber = update_employeenumber.Text.ToString();

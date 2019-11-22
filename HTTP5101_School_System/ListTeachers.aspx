@@ -4,8 +4,11 @@
     <div id="teacher_nav">
         <asp:label runat="server" for="teacher_search">Search:</asp:label>
         <asp:TextBox runat="server" ID="teacher_search" placeholder="Search for a teacher here"></asp:TextBox>
-        <asp:Button runat="server" Text="Submit"/>
+        <asp:Button runat="server" Text="Search"/>
         <!-- <div id="sql_debugger" runat="server"></div> -->
+    </div>
+    <div>
+        <a href="AddTeacher.aspx" id="top-adding-link" class="button-link">Add new teacher</a>
     </div>
     <div class="_table" runat="server">
         <div class="listitem">
@@ -20,6 +23,9 @@
         <div id="teachers_result" runat="server">
 
         </div>
+    </div>
+    <div>
+        <a href="AddTeacher.aspx" id="bottom-adding-link" class="button-link">Add new teacher</a>
     </div>
 </asp:Content>
 
