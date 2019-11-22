@@ -28,10 +28,18 @@ namespace HTTP5101_School_System
                 query += " OR TEACHERLNAME LIKE '%" + search + "%' ";
                 query += " OR  EMPLOYEENUMBER LIKE '%" + search + "%' ";
             }
-            sql_debugger.InnerHtml = query;
+
+            //sql_debugger.InnerHtml = query;
 
             var db = new SCHOOLDB();
             List<Dictionary<String, String>> rs = db.List_Query(query);
+            /* 
+                author: Christine ;
+                site: https://github.com/christinebittle/crud_essentials ;
+                date accessed: Nov 16 2019 ;
+                using purpose: to access the school database;
+            */
+
             foreach (Dictionary<String, String> row in rs)
             {
                 teachers_result.InnerHtml += "<div class=\"listitem\">";

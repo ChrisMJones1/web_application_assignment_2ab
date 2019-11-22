@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="DeleteTeacher.aspx.cs" Inherits="HTTP5101_School_System.DeleteTeacher" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
         <div id="delete_teachers" runat="server">
-        <h1>Please confirm the deleting information:</h1>        
+        <h1>Please confirm the deleting information:</h1>  
+            <%/* show the deleting information to users for confirmation  %>
         <div>
             First Name: <span id="teacher_fname" runat="server"></span>
         </div>

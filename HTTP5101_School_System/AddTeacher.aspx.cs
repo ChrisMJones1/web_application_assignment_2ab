@@ -22,10 +22,12 @@ namespace HTTP5101_School_System
                     string Add_HireDate = add_hiredate.Text.ToString();
                     double Add_Salary = Convert.ToDouble(add_salary.Text);
                     /*  
-                     *  https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number
-                     *  convert salary to a double type number
-                     *  Nov 19 2019
+                     *  author: Microsoft;
+                     *  site: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number;
+                     *  date accessed: Nov 19 2019;
+                     *  using purpose: to convert string(salary) to a double type number;
                      */
+                     /* show the user added information summary: */
                     Add_Summary.InnerHtml = "You have added the following teacher in the system: <br>";
                     Add_Summary.InnerHtml += "First name: " + Add_TeacherFname + "<br>";
                     Add_Summary.InnerHtml += "Last name: " + Add_TeacherLname + "<br>";
@@ -33,7 +35,9 @@ namespace HTTP5101_School_System
                     Add_Summary.InnerHtml += "Teacher hire date: " + Add_HireDate + "<br>";
                     Add_Summary.InnerHtml += "Teacher salary: " + Add_Salary + "<br>";
 
-                    /*string query = "insert into teachers (TEACHERFNAME, TEACHERLNAME, EMPLOYEENUMBER, HIREDATE) values (";
+                    /* try to modify the added data into the database table, and make it show in the teacher list interface: 
+
+                    string query = "insert into teachers (TEACHERFNAME, TEACHERLNAME, EMPLOYEENUMBER, HIREDATE) values (";
 
                     query += "'" + Add_TeacherFname + "'" + ", ";
                     query += "'" + Add_TeacherLname + "'" + ", ";

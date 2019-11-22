@@ -13,13 +13,13 @@ namespace HTTP5101_School_System {
     public partial class UpdateTeacher {
         
         /// <summary>
-        /// updating_teachers control.
+        /// update_teachers control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl updating_teachers;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl update_teachers;
         
         /// <summary>
         /// teacher_fullname control.

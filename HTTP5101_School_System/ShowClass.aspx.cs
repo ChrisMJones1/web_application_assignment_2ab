@@ -30,8 +30,8 @@ namespace HTTP5101_School_System
                     classcode_title.InnerHtml = class_record["CLASSCODE"];
                     classcode_display.InnerHtml = class_record["CLASSCODE"];
                     teacherid.InnerHtml = "<a href=\"ShowTeacher.aspx?teacherid=" + class_record["TEACHERID"] + "\">" + class_record["TEACHERID"] + "</a>";
-                    startdate.InnerHtml = class_record["STARTDATE"];
-                    finishdate.InnerHtml = class_record["FINISHDATE"];
+                    startdate.InnerHtml = class_record["STARTDATE"].Substring(0, 10);
+                    finishdate.InnerHtml = class_record["FINISHDATE"].Substring(0, 10);
                     classname.InnerHtml = class_record["CLASSNAME"];
 
                     //create render loop for postback if the button is clicked, and the classid is valid

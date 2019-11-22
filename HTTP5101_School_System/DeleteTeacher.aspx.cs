@@ -11,12 +11,10 @@ namespace HTTP5101_School_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //using modification of code written by Christine Bittle for HTTP5101, modified on Nov. 20 2019 by Ella Qi for educational purposes
             bool valid = true;
             string teacherid = Request.QueryString["teacherid"];
             if (String.IsNullOrEmpty(teacherid)) valid = false;
 
-            //Attempt to get the record 
             if (valid)
             {
                 var db = new SCHOOLDB();
@@ -43,6 +41,12 @@ namespace HTTP5101_School_System
                     }
                 }
             }
+            /* 
+                author: Christine ;
+                site: https://github.com/christinebittle/crud_essentials ;
+                date accessed: Nov 18 2019 ;
+                using purpose: to access the selected information from school database;
+            */
         }
     }
 }

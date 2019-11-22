@@ -27,10 +27,16 @@ namespace HTTP5101_School_System
                     classcode_title.InnerHtml = class_record["CLASSCODE"];
                     classcode_display.InnerHtml = class_record["CLASSCODE"];
                     teacherid.InnerHtml = class_record["TEACHERID"];
-                    startdate.InnerHtml = class_record["STARTDATE"];
-                    finishdate.InnerHtml = class_record["FINISHDATE"];
+                    startdate.InnerHtml = class_record["STARTDATE"].Substring(0, 10);
+                    finishdate.InnerHtml = class_record["FINISHDATE"].Substring(0, 10);
                     classname.InnerHtml = class_record["CLASSNAME"];
-
+                    if (Page.IsPostBack)
+                    {
+                        string query = "DELETE from `classes` where classid = " + classid;
+                        var deletedb = new SCHOOLDB();
+                        int delete = deletedb.Modify_Query(query);
+                        Response.Redirect("~/ListClasses.aspx");
+                    }
                 }
                 else
                 {

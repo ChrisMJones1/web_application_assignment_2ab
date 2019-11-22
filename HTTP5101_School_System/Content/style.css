@@ -124,3 +124,26 @@ a active {
     float: left;
     margin-right: 0;
 }
+/*
+#class_info {
+    display: flex;
+}
+
+.content-box {
+    background-color: #fefefe;
+    color: black;
+    flex: 1 0 0;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-content: center;
+    margin-bottom: 1em;
+}
+
+.content-box:last-child {
+    margin-right: 0;
+}
+*/
+.content-box a {
+    color: blue;
+}

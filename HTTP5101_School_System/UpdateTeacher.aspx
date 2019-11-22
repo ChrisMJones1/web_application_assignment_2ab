@@ -1,10 +1,8 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="UpdateTeacher.aspx.cs" Inherits="HTTP5101_School_System.UpdateTeacher" %>
 <asp:Content ID="teachers_list" ContentPlaceHolderID="body" runat="server">
-     <script type="text/javascript" src="updatestudents_javascript.js" ></script>
-    <!-- <style>#firstname_change{display: none;}</style> -->
-    <div id="updating_teachers" runat="server">
-        <h2>Updating a teacher information: <span id="teacher_fullname" runat="server"></span></h2>
-
+    <div id="update_teachers" runat="server">
+        <h2>Update a teacher information: <span id="teacher_fullname" runat="server"></span></h2>
+        <%/* show users current information for reference: */ %>
         <div>Current first name: <span id="teacher_fname" runat="server"></span>
             <div id="firstname_update">
                 <label for="update_teacherfname">New first name:</label> 
