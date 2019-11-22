@@ -6,7 +6,7 @@
         <asp:label for="student_search" runat="server">Search:</asp:label>
         <asp:TextBox ID="student_search" runat="server" placeholder="Search for a student here"></asp:TextBox>
         <asp:Button runat="server" text="Search"/>
-        <!-- <div id="sql_debugger" runat="server"></div> -->
+        <div id="sql_debugger" runat="server"></div>
         <%
         //todod: search by keyword
         //search by semester selection(?) -- calendar picker before/after? -- range?

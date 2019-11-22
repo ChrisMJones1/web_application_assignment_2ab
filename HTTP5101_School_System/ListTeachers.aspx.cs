@@ -26,7 +26,7 @@ namespace HTTP5101_School_System
             {
                 query += " WHERE TEACHERFNAME LIKE '%" + search + "%' ";
                 query += " OR TEACHERLNAME LIKE '%" + search + "%' ";
-                query += " OR TEACHERID =" + search;
+                query += " OR  EMPLOYEENUMBER LIKE '%" + search + "%' ";
             }
             sql_debugger.InnerHtml = query;
 

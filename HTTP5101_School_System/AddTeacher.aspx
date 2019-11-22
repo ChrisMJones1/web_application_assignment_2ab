@@ -17,7 +17,7 @@
             <label for="add_employeenumber">Employee Number:</label>
             <asp:Textbox runat="server" ID="add_employeenumber" placeholder="T123"></asp:Textbox>
             <asp:RequiredFieldValidator runat="server" ControlToValidate="add_employeenumber" EnableClientScript="true" ErrorMessage="Please enter the employee number"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator runat="server" ControlToValidate="add_employeenumber" EnableClientScript="true" ErrorMessage="Please enter a valid employee number" ValidationExpression="^T|n[0-9]{3}$"></asp:RegularExpressionValidator>
+            <asp:RegularExpressionValidator runat="server" ControlToValidate="add_employeenumber" EnableClientScript="true" ErrorMessage="Please enter a valid employee number" ValidationExpression="^T|t[0-9]{3}$"></asp:RegularExpressionValidator>
         </div>
         <div>
             <label for ="add_hiredate">Hire Date:</label>

@@ -5,7 +5,7 @@
         <asp:label runat="server" for="teacher_search">Search:</asp:label>
         <asp:TextBox runat="server" ID="teacher_search" placeholder="Search for a teacher here"></asp:TextBox>
         <asp:Button runat="server" Text="Search"/>
-        <!-- <div id="sql_debugger" runat="server"></div> -->
+        <div id="sql_debugger" runat="server"></div> 
     </div>
     <div>
         <a href="AddTeacher.aspx" id="top-adding-link" class="button-link">Add new teacher</a>

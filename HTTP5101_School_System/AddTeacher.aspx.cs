@@ -20,7 +20,7 @@ namespace HTTP5101_School_System
                     string Add_TeacherLname = add_teacherlname.Text.ToString();
                     string Add_EmployeeNumber = add_employeenumber.Text.ToString();
                     string Add_HireDate = add_hiredate.Text.ToString();
-                    double Add_Salary = Convert.ToDouble(add_salary);
+                    double Add_Salary = Convert.ToDouble(add_salary.Text);
                     /*  
                      *  https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number
                      *  convert salary to a double type number
