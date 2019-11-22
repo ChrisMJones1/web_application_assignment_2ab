@@ -20,6 +20,12 @@ namespace HTTP5101_School_System
             {
                 var db = new SCHOOLDB();
                 Dictionary<String, String> teacher_record = db.FindTeacher(Int32.Parse(teacherid));
+                /* 
+                author: Christine ;
+                site: https://github.com/christinebittle/crud_essentials ;
+                date accessed: Nov 18 2019 ;
+                using purpose: to access the school database;
+                */
 
                 if (teacher_record.Count > 0)
                 {
@@ -46,7 +52,7 @@ namespace HTTP5101_School_System
                         string Update_Salary = update_salary.Text.ToString();
 
                         update_summary.InnerHtml = "You have changed the following information about " + teacher_fullname.InnerHtml + ":<br>";
-
+                        //next step: use loop to simlify the following code:
                         if (Update_Teacherfname != "")
                         {
                             update_summary.InnerHtml += "First name: " + Update_Teacherfname + "<br>";

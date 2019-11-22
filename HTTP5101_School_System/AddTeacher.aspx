@@ -2,6 +2,7 @@
 <asp:Content ID="AddTeachers" ContentPlaceHolderID="body" runat="server">
     <div id="add_teachers" runat="server">
         <h2>Add a new teacher</h2>
+        <%/* debug mySQL query %>
         <div id="sql_debugger" runat="server"></div>
         <div>
             <label for="add_teacherfname">First name:</label> 
@@ -18,6 +19,7 @@
             <asp:Textbox runat="server" ID="add_employeenumber" placeholder="T123"></asp:Textbox>
             <asp:RequiredFieldValidator runat="server" ControlToValidate="add_employeenumber" EnableClientScript="true" ErrorMessage="Please enter the employee number"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator runat="server" ControlToValidate="add_employeenumber" EnableClientScript="true" ErrorMessage="Please enter a valid employee number" ValidationExpression="^T|n[0-9]{3}$"></asp:RegularExpressionValidator>
+            <%/* validate the user input expression */ %>
         </div>
         <div>
             <label for ="add_hiredate">Hire Date:</label>
@@ -31,5 +33,5 @@
             <asp:Button runat="server" text="Add" />
         </div> 
         <div id="Add_Summary" runat="server" ShowSummary="true"></div>
-    </div>         <%/* */ %>
+    </div>        
 </asp:Content>

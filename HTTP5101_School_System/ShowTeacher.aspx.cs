@@ -35,12 +35,17 @@ namespace HTTP5101_School_System
                     valid = false;
                 }
             }
-
+            //for the invalidate search input, shoe the error message:
             if (!valid)
             {
                 teacher.InnerHtml = "There was an error finding that teacher.";
             }
-
         }
+        /* 
+            author: Christine ;
+            site: https://github.com/christinebittle/crud_essentials ;
+            date accessed: Nov 18 2019 ;
+            using purpose: to access the selected information from school database;
+        */
     }
 }
