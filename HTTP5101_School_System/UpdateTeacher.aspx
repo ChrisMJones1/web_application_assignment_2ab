@@ -42,7 +42,7 @@
             </div>
         </div>
       
-        <asp:Button runat="server" text="Updating" />
+        <asp:Button runat="server" text="Update" />
         <div id="update_summary" runat="server"></div>
     </div>
 

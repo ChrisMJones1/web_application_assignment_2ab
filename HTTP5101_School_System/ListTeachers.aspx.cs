@@ -54,7 +54,7 @@ namespace HTTP5101_School_System
                 string salary = row["SALARY"];
                 teachers_result.InnerHtml += "<div class=\"col7\">" + salary + "</div>";
 
-                teachers_result.InnerHtml += "<div class=\"col7last\">" + "<a href=\"UpdateTeacher.aspx?teacherid=" + teacherid + "\"> Update </a>" + "<a href=\"ShowTeacher.aspx?teacherid=" + teacherid + "\"> Delete </a>" + "<a href=\"ShowTeacher.aspx?teacherid=" + teacherid + "\"> View </a>" + "</div>";
+                teachers_result.InnerHtml += "<div class=\"col7last\">" + "<a href=\"UpdateTeacher.aspx?teacherid=" + teacherid + "\"> Update </a>" + "<a href=\"DeleteTeacher.aspx?teacherid=" + teacherid + "\"> Delete </a>" + "<a href=\"ShowTeacher.aspx?teacherid=" + teacherid + "\"> View </a>" + "</div>";
 
                 teachers_result.InnerHtml += "</div>";
             }

@@ -122,6 +122,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddTeacher.aspx" />
     <Content Include="AddClass.aspx" />
     <Content Include="AddingStudents.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -131,6 +132,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
     <Content Include="DeleteClass.aspx" />
+    <Content Include="DeleteTeacher.aspx" />
     <Content Include="DeletingStudents.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -187,6 +189,13 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTeacher.aspx.cs">
+      <DependentUpon>AddTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddTeacher.aspx.designer.cs">
+      <DependentUpon>AddTeacher.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddClass.aspx.cs">
       <DependentUpon>AddClass.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -209,6 +218,13 @@
     </Compile>
     <Compile Include="DeleteClass.aspx.designer.cs">
       <DependentUpon>DeleteClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteTeacher.aspx.cs">
+      <DependentUpon>DeleteTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteTeacher.aspx.designer.cs">
+      <DependentUpon>DeleteTeacher.aspx</DependentUpon>
     </Compile>
     <Compile Include="DeletingStudents.aspx.cs">
       <DependentUpon>DeletingStudents.aspx</DependentUpon>
