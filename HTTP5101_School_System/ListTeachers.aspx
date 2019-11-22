@@ -8,7 +8,7 @@
 
     </div>
     <div>
-        <%/* use two add buttons(bootom and top) for users convience %>
+        <%/* use two add buttons(bootom and top) for users convience */%>
         <a href="AddTeacher.aspx" id="top-adding-link" class="button-link">Add new teacher</a>
     </div>
     <div class="_table" runat="server">
