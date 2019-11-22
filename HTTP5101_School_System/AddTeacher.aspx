@@ -2,7 +2,7 @@
 <asp:Content ID="AddTeachers" ContentPlaceHolderID="body" runat="server">
     <div id="add_teachers" runat="server">
         <h2>Add a new teacher</h2>
-        <%/* debug mySQL query %>
+        <%/* debug mySQL query */%>
         <div id="sql_debugger" runat="server"></div>
         <div>
             <label for="add_teacherfname">First name:</label> 

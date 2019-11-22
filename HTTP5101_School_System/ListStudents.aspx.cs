@@ -43,7 +43,7 @@ namespace HTTP5101_School_System
                 query += " or STUDENTNUMBER like '%"+searchkey+"%' ";
                 //query += " WHERE STUDENTNUMBER like '%" + searchkey + "%' ";
             }
-            sql_debugger.InnerHtml = query;
+            //sql_debugger.InnerHtml = query;
 
             var db = new SCHOOLDB();
             List<Dictionary<String,String>> rs = db.List_Query(query);
