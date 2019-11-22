@@ -15,7 +15,6 @@ namespace HTTP5101_School_System
             string teacherid = Request.QueryString["teacherid"];
             if (String.IsNullOrEmpty(teacherid)) valid = false;
 
-            //We will attempt to get the record we need
             if (valid)
             {
                 var db = new SCHOOLDB();
@@ -35,7 +34,7 @@ namespace HTTP5101_School_System
                     valid = false;
                 }
             }
-            //for the invalidate search input, shoe the error message:
+            //for the invalidate search input, show the error message:
             if (!valid)
             {
                 teacher.InnerHtml = "There was an error finding that teacher.";
