@@ -67,7 +67,7 @@ namespace HTTP5101_School_System
                 string enrolmentdate = row["ENROLMENTDATE"];
                 students_result.InnerHtml += "<div class=\"col6\">" + enrolmentdate + "</div>";
 
-                students_result.InnerHtml += "<div class=\"col6last\">" + "<a href =\"UpdateStudents.aspx?studentid="+studentid+"\">" + "Update" + "</a>" + " " + " " + " " + "<a href =\"DeletingStudents.aspx?studentid=" + studentid + "\">" + "Delete" + "</a>" + " " + " " + " " + "<a href=\"ShowStudent.aspx?studentid=" + studentid + "\">" + "View" + "</a></div>";
+                students_result.InnerHtml += "<div class=\"col6last\">" + "<a href =\"UpdateStudent.aspx?studentid="+studentid+"\">" + "Update" + "</a>" + " " + " " + " " + "<a href =\"DeleteStudent.aspx?studentid=" + studentid + "\">" + "Delete" + "</a>" + " " + " " + " " + "<a href=\"ShowStudent.aspx?studentid=" + studentid + "\">" + "View" + "</a></div>";
 
                 students_result.InnerHtml += "</div>";
             }

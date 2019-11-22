@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="AddingStudents.aspx.cs" Inherits="HTTP5101_School_System.AddingStudents" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="AddStudent.aspx.cs" Inherits="HTTP5101_School_System.AddingStudents" %>
 <asp:Content ID="AddingStudents" ContentPlaceHolderID="body" runat="server">
     <div id="adding_students" runat="server">
         <h2>Adding student information </h2>

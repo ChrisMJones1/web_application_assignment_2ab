@@ -14,7 +14,7 @@
         %>
     </div>
     <div>
-        <a href="AddingStudents.aspx" id="top-adding-link" class="button-link">Add a student</a>
+        <a href="AddStudent.aspx" id="top-adding-link" class="button-link">Add a student</a>
         <%
             //creating a link that lead to the adding page of new students into the database
         %>
@@ -32,5 +32,5 @@
     </div> 
     <!-- WHAT IF the user scroll through all the page and still can't find the student and want to add the student in the system -->
     <!-- The Add a student link at the end will be helpful in that case -->
-    <a href="AddingStudents.aspx" id="bottom-adding-link" class="button-link">Add a student</a>
+    <a href="AddStudent.aspx" id="bottom-adding-link" class="button-link">Add a student</a>
 </asp:Content>

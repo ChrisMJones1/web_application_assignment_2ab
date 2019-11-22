@@ -53,7 +53,7 @@ namespace HTTP5101_School_System
                         }
                         else
                         {
-                            update_summary.InnerHtml += "First name unchanged <br>";
+                            update_summary.InnerHtml += "First name: unchanged <br>";
                         }
                         if (Update_Teacherlname != "")
                         {
@@ -61,7 +61,7 @@ namespace HTTP5101_School_System
                         }
                         else
                         {
-                            update_summary.InnerHtml += "Last name unchanged <br>";
+                            update_summary.InnerHtml += "Last name: unchanged <br>";
                         }
                         if (Update_Employeenumber != "")
                         {
@@ -77,7 +77,7 @@ namespace HTTP5101_School_System
                         }
                         else
                         {
-                            update_summary.InnerHtml += "Hire date unchanged <br>";
+                            update_summary.InnerHtml += "Hire date: unchanged <br>";
                         }
                         if (Update_Salary != "")
                         {
@@ -85,7 +85,7 @@ namespace HTTP5101_School_System
                         }
                         else
                         {
-                            update_summary.InnerHtml += "Salary unchanged <br>";
+                            update_summary.InnerHtml += "Salary: unchanged <br>";
                         }
                     }
                 }

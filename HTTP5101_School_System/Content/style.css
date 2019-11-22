@@ -17,7 +17,7 @@ footer{margin-top:50px;}
     font-family: Lato, sans-serif;
 }
 
-.main-navigation li /*#footer-nav li*/ {
+.main-navigation li {
     display: inline-block;
     vertical-align: top;
     list-style-type: none;
@@ -90,9 +90,6 @@ a active {
 ._table a:hover,
 ._table a:active {
     color: #9F224E;
-}
-.listitem:first-child {
-    font-weight:bold;
 }
 .table-content {
     font-weight:normal;
