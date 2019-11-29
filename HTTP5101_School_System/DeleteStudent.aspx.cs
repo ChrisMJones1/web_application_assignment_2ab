@@ -37,11 +37,18 @@ namespace HTTP5101_School_System
                     Page.Validate();
                     if (Page.IsValid)
                     {
-                        deleting_summary.InnerHtml = "You have deleted the following student: <br>";
+                        deleting_summary.InnerHtml = "You have successfully deleted the following student: <br>";
                         deleting_summary.InnerHtml += "First name: " + student_fname.InnerHtml + "<br>";
                         deleting_summary.InnerHtml += "Last name: " + student_lname.InnerHtml + "<br>";
                         deleting_summary.InnerHtml += "Student number: " + student_number.InnerHtml + "<br>";
                         deleting_summary.InnerHtml += "Enrolment date: " + enrolment_date.InnerHtml + "<br>";
+                        deleting_summary.InnerHtml += "Please go back to "+ "<a href=\"ListStudents.aspx\">" + "Students page " + "</a>" + "to check.";
+
+                        string query = "Delete from students where studentid = " + studentid;
+                        sql_debugger.InnerHtml = query;
+
+                        
+                        int delete = db.Modify_Query(query);
                     }
                 }
             }

@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="DeleteStudent.aspx.cs" Inherits="HTTP5101_School_System.DeletingStudents" %>
 <asp:Content ID="DeletingStudents" ContentPlaceHolderID="body" runat="server">
     <div id="deleting_students" runat="server">
+    <div id="sql_debugger" runat="server"></div>
         <h2>Deleting student: <span id="student_fullname" runat="server"></span></h2>
         <h2>Please review the following information CAREFULLY before deleting </h2>        
         <div>

@@ -21,13 +21,8 @@
             <%/*What if the user enter the wrong format of student number?*/ %>
             <asp:RegularExpressionValidator runat="server" ControlToValidate="adding_studentnumber" EnableClientScript="true" ErrorMessage="Please enter the right format of student number" ValidationExpression="^N|n[0-9]{4}$"></asp:RegularExpressionValidator>
         </div>
-        <div>
-            <label for ="adding_studentenrolmentdate">Enrolment Date:</label>
-            <asp:Textbox runat="server" ID="adding_studentenrolmentdate" placeholder="16 Nov 2019"></asp:Textbox>
-            <asp:RequiredFieldValidator runat="server" ControlToValidate="adding_studentenrolmentdate" EnableClientScript="true" ErrorMessage="Please enter the enrolmentdate"></asp:RequiredFieldValidator><br />
-            <asp:Button runat="server" text="Add" />
-            
-        </div>      
+        
+        <asp:Button runat="server" text="Add" />
         <div id="Adding_Summary" runat="server" ShowSummary="true"></div>
         <!-- <div id="students_result" class="_table" runat="server">
             <div class="listitem">
